@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Contact modal styles: the modal is a simple full-viewport overlay and a centered dialog. */
+/* The .contact-modal element darkens the background; .contact-dialog is the white card */
+/* Contact modal */
+  /* Root container */
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+
+  /* Accessibility: focus-visible styles for keyboard users */
+  :focus {
+    outline: none;
+  }
+  :focus-visible {
+    outline: 3px solid rgba(79,70,229,0.25);
+    outline-offset: 2px;
+  }
+
+  /* Header / search */
+  .app-header { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.5rem 0 }
+  .header-logo { margin:0; font-size:1.25rem }
+  .search-input { padding:0.5rem 0.75rem; border-radius:6px; border:1px solid #ddd }
+
+  /* --- Cards layout --- */
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .service-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease;
+    cursor: pointer;
+    text-align: left;
+  }
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+  .service-name {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .service-description {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .providers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: start;
+  }
+
+  .providers-container .card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+  .providers-container .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
+  .providers-container .card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .providers-container .card h3 { margin: 0; font-size: 1.05rem; }
+  .providers-container .card p { margin: 0; color: #444; font-size: 0.95rem; }
+  .providers-container .card button {
+    margin-top: auto;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background: #4f46e5;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .providers-container .card button:hover { background: #4238c9; }
+
+  @media (max-width: 480px) {
+    .providers-container { grid-template-columns: 1fr; }
+    .categories-container { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  }
+
+  /* Contact modal styles: the modal is a simple full-viewport overlay and a centered dialog. */
+  /* The .contact-modal element darkens the background; .contact-dialog is the white card */
+  /* Contact modal */
+  .contact-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    padding: 1rem;
+    z-index: 60;
+  }
+  .contact-dialog {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    max-width: 540px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  }
+  .contact-dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-dialog input,
+  .contact-dialog textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .contact-dialog button { padding: 0.5rem 0.75rem; border-radius: 6px; }
+  .contact-dialog button[type="submit"] { background: #06b6d4; color: #fff; border: none; }
+  .contact-dialog button[type="button"] { background: #e5e7eb; border: none; }
