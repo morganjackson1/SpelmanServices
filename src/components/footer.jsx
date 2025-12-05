@@ -1,5 +1,5 @@
 const Footer = (props) => {
-    const info = (props && props.info) || { name: 'SpelmanServices', year: new Date().getFullYear() };
+    const info = (props && props.info) || { name: 'Styld', year: new Date().getFullYear() };
 
     return (
         <footer className="app-footer">

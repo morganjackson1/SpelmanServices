@@ -34,8 +34,8 @@ function App() {
 
   return (
     <div>
-      <Header onSearch={setSearchTerm} />
-      <Hero title="Welcome to Spelman Services" />
+  <Header onSearch={setSearchTerm} platformName="Styld" />
+  <Hero title="Welcome to Styld" />
 
       <main>
         <h2>Categories</h2>
@@ -69,7 +69,7 @@ function App() {
         )}
       </main>
 
-      <Footer info={{ name: "SpelmanServices", year: new Date().getFullYear() }} />
+  <Footer info={{ name: "Styld", year: new Date().getFullYear() }} />
     </div>
   );
 }

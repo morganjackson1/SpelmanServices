@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = (props) => {
-    const { onSearch, platformName = 'Spelman Services' } = props;
+    const { onSearch, platformName = 'Styld' } = props;
 
     const handleChange = (e) => {
         if (typeof onSearch === 'function') onSearch(e.target.value);
