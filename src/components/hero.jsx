@@ -10,7 +10,7 @@ const Hero = (props) => {
                     <p className="hero-subtitle">Book trusted stylists and creators near you</p>
                 </div>
                 <div className="hero-image" aria-hidden>
-                    <img src="/src/assets/hero.jpg" alt="Stylists working" />
+                    <img src="/assets/hero.jpg" alt="Stylists working" />
                 </div>
             </div>
         </section>
