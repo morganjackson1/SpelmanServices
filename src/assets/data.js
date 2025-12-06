@@ -48,5 +48,45 @@ export const providers = [
     price: "$45",
     category: "Hair & Beauty",
   image: "/assets/providers/p5.jpg"
+  },
+  {
+    id: 6,
+    name: "Amara Johnson",
+    service: "Biology Tutoring",
+    price: "$28/hour",
+    category: "Tutoring",
+  image: "/assets/providers/p6.jpg"
+  },
+  {
+    id: 7,
+    name: "Zara Thompson",
+    service: "Lash Extensions",
+    price: "$60",
+    category: "Hair & Beauty",
+  image: "/assets/providers/p7.jpg"
+  },
+  {
+    id: 8,
+    name: "Jasmine Lee",
+    service: "Branding Design",
+    price: "$150",
+    category: "Design",
+  image: "/assets/providers/p8.jpg"
+  },
+  {
+    id: 9,
+    name: "Sienna Martinez",
+    service: "SAT Prep Tutoring",
+    price: "$35/hour",
+    category: "Tutoring",
+  image: "/assets/providers/p9.jpg"
+  },
+  {
+    id: 10,
+    name: "Nadia Blake",
+    service: "Makeup & Styling",
+    price: "$75",
+    category: "Hair & Beauty",
+  image: "/assets/providers/p10.jpg"
   }
 ];
