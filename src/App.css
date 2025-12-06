@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root{
-  --bg:#f7f8fb;
+  --bg:#f0f6ff;
   --card:#ffffff;
-  --accent:#6d28d9;
-  --muted:#6b7280;
+  --accent:#1e3a8a; /* indigo-800 */
+  --accent-2:#2563eb; /* blue-600 */
+  --muted:#475569; /* slate-600 */
   --maxw:1200px;
 }
 
@@ -68,7 +69,7 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   /* Header / search */
   .app-header { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0 }
   .header-logo { margin:0; font-size:1.5rem; font-weight:700; letter-spacing:0.2px }
-  .search-input { padding:0.6rem 0.8rem; border-radius:10px; border:1px solid #e6e9ef; width:320px; box-shadow:0 6px 18px rgba(99,102,241,0.06)}
+  .search-input { padding:0.6rem 0.8rem; border-radius:10px; border:1px solid #dbeafe; width:320px; box-shadow:0 6px 18px rgba(37,99,235,0.06)}
 
   /* --- Cards layout --- */
   .categories-container {
@@ -137,12 +138,12 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
     margin-top: auto;
     padding: 0.6rem 0.9rem;
     border: none;
-    background: var(--accent);
+    background: linear-gradient(90deg,var(--accent),var(--accent-2));
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
   }
-  .providers-container .card button:hover { background: #5b21b6; transform: translateY(-2px) }
+  .providers-container .card button:hover { transform: translateY(-2px); filter:brightness(1.03) }
 
   /* Hero */
   .hero-section{ margin:1rem 0 2rem }
